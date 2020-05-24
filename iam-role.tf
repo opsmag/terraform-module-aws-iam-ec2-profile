@@ -1,5 +1,5 @@
 resource "aws_iam_role" "this" {
-  name        = "${var.project_name}-ec2-profile"
+  name        = "${var.infrastructure}-ec2-profile"
   description = var.description
 
   assume_role_policy = <<EOF
